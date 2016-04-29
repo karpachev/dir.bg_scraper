@@ -1,0 +1,23 @@
+{
+  "name": "dir.bg_scraper",
+  "version": "1.0.0",
+  "description": "Determine the structure of dir.bg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karpachev/dir.bg_scraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karpachev/dir.bg_scraper/issues"
+  },
+  "homepage": "https://github.com/karpachev/dir.bg_scraper#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "request": "^2.72.0"
+  }
+}
