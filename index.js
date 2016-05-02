@@ -6,37 +6,29 @@ var URL = require('url');
 var md5 = require('md5');
 
 var datastore = require('./datastore.js');
+var stats = require("./stats.js");
 
 var starting_URL = 'http://dnes.dir.bg';
-var stats = {
-	pages_crawled : 0,
-	total_bytes : 0,
+/// Configuration object for the Crawling task
+function TaskConfig(config) {
+	this.request = request;
+	this.request = require("./datastore_request.js");
 
-	print_stats : function () {
-		console.log(util.format("Pages crawled: %d, Total MB processed: %d, Average bytes per page: %d",
-				this.pages_crawled,
-				this.total_bytes/1024/1024,
-				this.total_bytes/this.pages_crawled
-			));
-	},
-	new_page : function(body) {
-		this.pages_crawled ++;
-		this.total_bytes += body.length;
-
-		if (this.pages_crawled%100==0) {
-			this.print_stats();
+	if (config)
+		for (key in config) {
+			this[key] = config[key];
 		}
-	}
-};
+}
+
 
 var crawler_queue = async.queue(
 		request_page,
 		500
 	);
-crawler_queue.push({
+crawler_queue.push(new TaskConfig({
 	URL:starting_URL,
-	level: 1
-});
+	max_level: 1
+}));
 crawler_queue.drain = stats.print_stats.bind(stats);
 
 var visited_pages = {};
@@ -48,9 +40,9 @@ function request_page(task, callback) {
 		return;
 	}
 
-	console.log("Crawling ", task.URL, ":", task.level);
+	console.log("Crawling ", task.URL, ":", task.max_level);
 	visited_pages[task.URL] = true;
-	request(task.URL, function (error, response, body) {
+	task.request(task.URL, function (error, response, body) {
 	  if (!error && response.statusCode == 200) {
 	  	//console.log(util.format("Finished processing %s [%d]", task.URL, body.length));
 	  	process_page(task, body);
@@ -101,11 +93,11 @@ function process_page(task, body) {
 			if (visited_pages[resolved_URL]) {
 				return true;
 			}			
-			if (task.level!==undefined && task.level<1) {
+			if (task.max_level!==undefined && task.max_level<1) {
 				return true;
 			}
-			var new_task = {URL:resolved_URL};
-			if (task.level!==undefined) new_task.level = task.level-1;
+			var new_task = new TaskConfig({URL:resolved_URL});
+			if (task.max_level!==undefined) new_task.max_level = task.max_level-1;
 			crawler_queue.push(new_task);
 		}
 	});
