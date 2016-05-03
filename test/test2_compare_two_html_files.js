@@ -35,7 +35,7 @@ function compare(dom1,dom2,level) {
 		// util.puts(util.inspect(dom1, false, null))
 		// console.log("\r\n--------\r\n");
 		// util.puts(util.inspect(dom2, false, null))		
-		return;
+		// return;
 	}
 	for (var i=0;i<Math.min(dom1.length,dom2.length);i++) {
 		if (dom1[i].type!=dom2[i].type)	{
@@ -51,11 +51,22 @@ function compare(dom1,dom2,level) {
 			compare(dom1[i].children, dom2[i].children, level+1)
 		} else if (dom1[i].children) {
 			console.log(level, "Difference in children on dom1", i);
+			difference += raw_length(dom1[i].children);
 		} else if (dom2[i].children) {
 			console.log(level, "Difference in children on dom2", i);
-		} else {
+			difference += raw_length(dom2[i].children);
+		} 
+	}
+}
 
-		}
+function raw_length(dom)
+{
+	var length = 0;
+	for (var i=0;i<dom.length;i++) {
+		length += dom[i].raw.length;
+		if (dom[i].children)
+			length += raw_length(dom[i].children);
 	}
 
+	return length;
 }

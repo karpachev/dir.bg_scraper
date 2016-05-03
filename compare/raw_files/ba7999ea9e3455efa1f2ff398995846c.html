@@ -1,0 +1,1063 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="bg" xml:lang="bg" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="bg">
+<META NAME="DISTRIBUTION" CONTENT="GLOBAL">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<META NAME="REVISIT-AFTER" CONTENT="1 DAYS">
+<title> - Днес.dir.bg - Галерия</title>
+<meta name="DESCRIPTION" content=""/>
+<link rel="image_src" href="" / >
+<META name="KEYWORDS" content=""> 
+<link href="http://i.dir-i.net/dir.bg/img/dir.ico" rel="shortcut icon">
+<link id="main_css" href="http://i.dir.bg/esspresso/css/dnes_135.css" rel="stylesheet" type="text/css" /> 
+<link href="http://i.dir.bg/wall.dir.bg/new/bar-dnes.css" rel="stylesheet" type="text/css"/>
+<link rel="alternate" type="application/rss+xml" title="RSS Всички" href="http://dnes.dir.bg/support/cat_rss.php?section=all" />
+<link rel="alternate" type="application/rss+xml" title="RSS Главните" href="http://dnes.dir.bg/support/cat_rss.php?section=glavnite" />
+<link rel="alternate" type="application/rss+xml" title="RSS Политика" href="http://dnes.dir.bg/support/cat_rss.php?id=271" />
+<link rel="alternate" type="application/rss+xml" title="RSS Общество" href="http://dnes.dir.bg/support/cat_rss.php?id=272" />
+<link rel="alternate" type="application/rss+xml" title="RSS По Света" href="http://dnes.dir.bg/support/cat_rss.php?id=274" />
+<link rel="alternate" type="application/rss+xml" title="RSS Бизнес" href="http://dnes.dir.bg/support/cat_rss.php?id=275" />
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-436010-20', 'dir.bg');
+  ga('send', 'pageview');
+
+</script><script type="text/javascript" src="http://ni.dir.bg/facebook/combined-sr.js"></script>
+<script type="text/javascript" src="http://i.dir-i.net/application.comments/js/tools.overlay-1.1.2.min.js"></script>
+<script type="text/javascript" src="http://i.dir-i.net/application.comments/js/jquery.event.drag-2.0.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" /><script type="text/javascript">
+ 
+function load_gallery_news(url) {
+	$("#rightgallery").empty();
+	$("#rightgallery").append('<table border=0 width=200 height=300 align=center><tr><td align=absmiddle><img src=http://i.dir-i.net/esspresso/images/ajax-loader.gif border=0></td></tr></table>');
+	$("#rightgallery").load('/support/get_news_gallery.php'+url);
+} 
+function onShowComments() {
+  $('#AppComm_buttons_top').hide();
+}
+function onHideComments() {
+  $('#AppComm_buttons_top').hide();
+  $('#AppComm_buttons_ext li:first a').toggle();
+}
+function onToggleComments() {
+  $('#AppComm_buttons_top').hide();
+  if ($('#AppComm_buttons_ext li:first a').html().match(/\(0\)/)) return;
+  $('#AppComm_buttons_ext li:first a').toggle();
+} 
+function liFormat (row, i, num) {
+	var result = row[2] ;
+	return result;
+}
+function selectItemUsualP(li) {
+	if( li == null ) var sValue = 'Nothing selected!';
+	if( !!li.extra ) {var sValue = li.extra[0];  }
+	else { var sValue = li.selectValue;   }	
+	document.location.href = '/tagp_gallery.php?id='+sValue;	
+}
+$(function() {		
+$(".scrollable88").scrollable({next: "#nextGall", prev: "#prevGall", size: 3});	
+$("#tsearchp").autocomplete("/support/get_ptags.php", {
+	minChars:1,
+	matchSubset:1, 
+	//autoFill:true, 
+	matchContains:1,
+	//cacheLength:10,
+	cacheLength:0, 
+	selectFirst:true,
+	formatItem:liFormat,
+	maxItemsToShow:10,
+	onItemSelect:selectItemUsualP
+});  
+});
+</script>
+</head> 
+<body>
+<div id="1_dnes5_gallery" name="1_dnes5_gallery" class=adsplace> </div><div id="1_dnes5_all" name="1_dnes5_all" class=adsplace> </div><script type="text/javascript">
+(function(p){
+    p.src = "//dmp.adform.net/dmp/profile/?pid=10193&sg=bg29dnes.dir";
+})(document.createElement("img"));
+</script>
+<noscript>
+    <img src="//dmp.adform.net/dmp/profile/?pid=10193&sg=bg29dnes.dir" style="display:none !important">
+</noscript>
+<script type="text/javascript" src="http://ni.dir.bg/application.comments/js/common.js?p=1"></script>
+<script type="text/javascript" src="http://i.dir.bg/dir5/zona/html/js/jquery.ui.totop.min.js"></script>
+<script type="text/javascript" src="http://i.dir.bg/dir5/zona/html/js/easing.js"></script>
+<script type="text/javascript">
+
+function logoutSite() {
+  document.location = 'https://my.dir.bg/logout_site.php?backref='+document.location;
+}
+
+function updateHottheme() {
+   var curdate = new Date();
+   //var str = curdate.getHours()+'_'+curdate.getMinutes()+'_'+parseInt(curdate.getSeconds()/30);
+   var str = curdate.getHours()+'_'+parseInt(curdate.getMinutes()/20);
+
+  /**
+  * COMMENTED BECAUSE BACKEND OVERLOAD
+  */
+  /*$.ajax({
+    type: "GET",
+    url: '/comments/get_latest_comment.php?jnl_id=3&ctype_id=14&topic_id='+parseInt()+'&extended=12&str='+str,
+    cache: true,
+    async: true,
+    scriptCharset: "UTF-8",
+    contentType: "application/x-www-form-urlencoded;charset=UTF-8",
+    success: function(data){
+      flag = data.substr(0,1);
+      if (flag == 1) 
+        $('#hottheme_link_dnes').html(data.substr(1));
+    }
+  });*/
+}
+
+$(document).ready(function(){ 
+ 
+  
+    
+  //	countCommentsSpan();
+			
+});
+</script>
+<!--lenta-->
+<script type="text/javascript" src="http://i.dir.bg/dir5/zona/html/js/easing.js"></script>
+<script type="text/javascript" src="http://i.dir.bg/dir5/zona/html/js/jquery.color.js"></script>
+<link href="http://i.dir.bg/dir5/zona/html/lenta20.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<link href="http://i.dir.bg/dir5/dir-new/html/lentaie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript">
+function getUserInfo() {
+  $.ajax({
+    type: "GET",
+    url: '/JSAJAX/get_user_info.php?enc=utf-8&now='+Math.random(),
+    cache: false,
+    async: false,
+    success: function(data) {
+      var v = data.split(':');
+      var username = v[0];
+      var show_beta = v[1];
+      var nickname = v[2] ? v[2] : v[0];
+      var avatar = v[3];
+      var unread = v[4];
+      if (username) {
+        $("#idsettings").css({ display:'block'});
+        $('#usernick').html(nickname.substring(0,16));
+        $('#avatar').attr('src', 'https:'+avatar);
+        if(unread > 0) {
+          $("#notifi").css({ display:'block'});
+        $('#notifi').html(unread);
+      } else {
+        $("#notifi").css({ display:'none'});
+      }
+      $('#notifi2').html(unread);
+      } else {
+        $("#lenta-login").css({ display:'block'});
+      }
+    }
+  });
+}
+$(document).ready(function(){
+  getUserInfo();
+});
+
+</script>
+<div id="lentaspace">
+    <div id="lenta-all">
+        <div id="lentawrapper">
+
+                <div id="lenta-login" style="display:none">
+                <a href="https://my.dir.bg/index_facebook.php?from=http://dnes.dir.bg%2Fgallery_fp.php">ВХОД</a>
+                </div>
+
+                    <div id="idsettings" style="float:right;display:none">
+                        <ul id="details">
+                            <li id="notes"><a href="http://messages.dir.bg"><ins><span id="notifi2"></span> нови</ins>Бележки</a></li>
+                            <li><a href="http://my.dir.bg/my_add_edit.php">Настройки на профила</a></li>
+                            <li><a href="http://gallery.dir.bg">Mоите снимки</a></li>
+                            <li><a href="https://my.dir.bg/logout_site.php?backref=http://dnes.dir.bg%2Fgallery_fp.php">Изход</a></li>
+                        </ul>
+                        <img id="avatar"  src="" width="25" height="25" />
+                        <div id="usernick" style="float:left;"></div><div id="notifi"></div>
+                    </div>
+
+            <ul id="lenta-butoni" style="width:240px;">
+			<div id='hot2'>ТЕМИТЕ<div id='lenta-hots'><ul><li><a href='http://dnes.dir.bg/tag_first.php?id=122244'>Кабинетът</a></li><li><a href='http://dnes.dir.bg/tag_first.php?id=132368'>Бежанците</a></li><li><a href='http://dnes.dir.bg/tag_first.php?id=119833'>Джихад</a></li><li><a href='http://dnes.dir.bg/tag_first.php?id=121340'>Природата</a></li><li><a href='http://dnes.dir.bg/tag_first.php?id=47170'>Евросъюзът</a></li><li><a href='http://dnes.dir.bg/tag_first.php?id=139004'>Избори в САЩ</a></li><li><a href='http://dnes.dir.bg/tag_first.php?id=139584'>Панама гейт</a></li><li><a href='http://dnes.dir.bg/tag_first.php?id=45576'>Украйна</a></li><li><a href='http://dnes.dir.bg/tag_first.php?id=46544'>Улични бойци</a></li><div class='clearfloat'></div></ul></div></div>    <!-- <li><a href="http://dnes.dir.bg/tag_first.php?id=45576" id="hot2" style="background-position:-5000px -5000px">УКРАЙНА</a></li>
+           <li><a href="http://dnes.dir.bg/izbori-2013/" id="hot2" style="background-position:-5000px -5000px; overflow:hidden;">ИЗБОРИ</a></li>
+            <div id="hot2">ГОРЕЩО
+                    <div id="lenta-hots">
+                        <ul>
+                        <li><a href="http://dnes.dir.bg/izbori-2013/">Властта</a></li>
+                        <li><a href="http://dnes.dir.bg/tag_first.php?id=45576">УКРАЙНА</a></li>
+                        <div class="clearfloat"></div>
+                        </ul>
+                    </div>
+                </div> -->
+              
+                <li id="lenta-but1" class="ikoni"><a href="http://clubs.dir.bg" title="Клубове">Форум</a></li>
+                <li id="lenta-but3" class="ikoni"><a href="http://smart.dir.bg" title="Мобилна версия">Мобилна версия</a></li>
+                <li id="lenta-but2" class="ikoni"><a href="http://mail.dir.bg" title="Поща">Поща</a></li>
+               <li id="lenta-but4" class="ikoni"><a href="http://tranz.it" title="Транзит">Транзит</a></li>
+            </ul>
+            <div id="lenta-search">
+
+                <form id="searchForm" action="http://dir.bg/my/search.php" method="GET">
+                    <fieldset>
+                        <div class="input">
+                            <input type="text" name="textfield" id="s" value="Търси в новини"/>
+                        </div>
+                        <input type="submit" id="searchSubmit" value="" onclick=""/>
+                    </fieldset>
+                </form>
+            </div>
+            <div id="lenta-butoni-left">
+                <ul>
+
+                    <li id="lefb1"><a href="http://dir.bg">Dir.bg</a></li>
+                    <li id="lefb5"><a href="http://dir.bg">ПЪРВА</a></li>
+                    <li id="lefb3"><a href="http://dnes.dir.bg">ДНЕС</a></li>
+                    <li id="lefb4"><a href="http://life.dir.bg">ЛАЙФ</a></li>
+                    <li>
+            <div id="lefb2">САЙТОВЕ
+                    <div id="lenta-sites">
+                        <h5>Списания</h5>
+                        <ul class="sites-all2 clearfix">
+                            <li><a href="http://auto.dir.bg/">Авто</a></li>
+                            <li><a href="http://banks.dir.bg/">Банки</a></li>
+                            <li><a href="http://vremeto.dir.bg/vremeto/vremeto.php">Времето</a></li>
+                            <li><a href="http://glog.dir.bg">Глог</a></li>
+                            <li><a href="http://dom.dir.bg" class="nomargin">Дoм</a></li>
+                            <li><a href="http://zodiac.dir.bg/">Зодиак</a></li>
+                            <li><a href="http://games.dir.bg/">Игри</a></li>
+                            <li><a href="http://calendar.dir.bg/">Календар</a></li>
+                            <li><a href="http://greetings.dir.bg/">Картички</a></li>
+                            <li><a href="http://dir.dir.bg" class="nomargin">Каталог</a></li>
+                            <li><a href="http://kino.dir.bg/" >Kино</a></li>
+                            <li><a href="http://clubs.dir.bg/">Клубове</a></li>
+                            <li><a href="http://it.dir.bg">Технолигии</a></li>
+                            <li><a href="http://corner.dir.bg">Корнер</a></li>
+                            <li><a href="http://chat.dir.bg" class="nomargin">Лафче</a></li>
+                            <li><a href="http://market.dir.bg/" >Маркет</a></li>
+                            <li><a href="http://trip.dir.bg" >Пътувания</a></li>
+                            <li><a href="http://promo.dir.bg">Промоции</a></li>
+                            <li><a href="http://radio.dir.bg">Радио</a></li>
+                            <li><a href="http://tv.dir.bg" class="nomargin">Телевизия</a></li>
+                            <li><a href="http://vkusotii.dir.bg">Вкусотии</a></li>
+                            <li><a href="http://gallery.dir.bg">Галерия</a></li>
+                        <div class="clearfloat"></div>
+                        </ul>
+                        <h5>Услуги</h5>
+                        <ul class="sites-all"  style="width:80px">
+                           <li><a href="http://www.vip.dir.bg/kakvo_e_vip.php">VIP сайт</a></li>
+                        </ul>
+                        <ul class="sites-all"  style="width:100px">
+                            <li><a href="http://trip.dir.bg/vip.php">VIP оферта</a></li>
+                        </ul>
+                        <ul class="sites-all" style="width:100px">
+                            <li><a href="http://glog.dir.bg/newui/create_your_site.php">Направи си сайт</a></li>
+                        </ul>
+                        <ul class="sites-all" style="width:100px">
+                            <li><a href="http://direct.dir.bg/">Direct Реклама</a></li>
+                        </ul>
+                        <div class="clearfloat"></div>
+                        <h5>Градове</h5>
+                        <ul class="sites-all">
+                            <li><a href="http://sofia.dir.bg/">София</a></li>
+                        </ul>
+                        <ul class="sites-all">
+                            <li><a href="http://plovdiv.dir.bg/">Пловдив</a></li>
+                        </ul>
+                        <ul class="sites-all">
+                            <li><a href="http://varna.dir.bg">Варна</a></li>
+                        </ul>
+                        <ul class="sites-all">
+                            <li><a href="http://burgas.dir.bg">Бургас</a></li>
+                        </ul>
+                        <ul class="sites-all nomargin">
+                            <li><a href="http://ruse.dir.bg">Русе</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        if (!window.localStorage) {
+
+        }
+        else {
+            if (!(window.localStorage.getItem("is_mobile_agent") == "false")) {
+                $.ajax({
+                    url: 'http://smart.dir.bg/mobile_check.php',
+                    dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
+                    success: function (json) {
+                        if (json.mobile == "true" && json.url) {
+                            $("#lentaspace").after('<div id="back-to-mobile">\
+                    <a href="http://www.dir.bg/view_mobile.php?url=' + json.url + '">Към мобилната версия</a>\
+                    </div>');
+                        }
+                        if (json.mobile == "false")
+                            if (window.localStorage)
+                                window.localStorage.setItem("is_mobile_agent", "false");
+                    },
+                    data: { url: location.href, method: "post"},
+                    error: function () {
+                        //alert("Error");
+                    },
+                    type: 'POST'
+                });
+            }
+        }
+    });
+</script>
+
+<script>
+$("#lefb2").click(function () {
+    if ($("#lenta-sites").is(":hidden")) {
+        $("#lenta-sites").slideDown("fast");
+    } else {
+        $("#lenta-sites").hide();
+    }
+});
+$("#lefb2").mouseleave(function () {
+    $('#lenta-sites').hide();
+});
+</script>
+<script type="text/javascript">
+
+$(function(){
+
+    var input = $('input#s');
+    var divInput = $('div.input');
+    var width = divInput.width();
+    var outerWidth = divInput.parent().width() - (divInput.outerWidth() - width) - 28;
+    var submit = $('#searchSubmit');
+    var txt = input.val();
+
+    input.bind('focus', function() {
+        if(input.val() === txt) {
+            input.val('');
+        }
+        $(this).animate({color: '#6F9CE1'}, 300); // text color
+        $(this).parent().animate({
+            width: outerWidth + 'px',
+            backgroundColor: '#001C37', // background color
+            paddingRight: '43px'
+        }, 300, function() {
+            if(!(input.val() === '' || input.val() === txt)) {
+                if(!($.browser.msie && $.browser.version < 9)) {
+                    submit.fadeIn(300);
+                } else {
+                    submit.css({display: 'block'});
+                }
+            }
+        }).addClass('focus');
+    }).bind('blur', function() {
+        $(this).animate({color: '#6F9CE1'}, 300); // text color
+        $(this).parent().animate({
+            width: width + 'px',
+            backgroundColor: '#003162', // background color
+            paddingRight: '15px'
+        }, 300, function() {
+            if(input.val() === '') {
+                input.val(txt)
+            }
+        }).removeClass('focus');
+        if(!($.browser.msie && $.browser.version < 9)) {
+            submit.fadeOut(600);
+        } else {
+            submit.css({display: 'none'});
+        }
+    }).keyup(function() {
+        if(input.val() === '') {
+            if(!($.browser.msie && $.browser.version < 9)) {
+                submit.fadeOut(300);
+            } else {
+                submit.css({display: 'none'});
+            }
+        } else {
+            if(!($.browser.msie && $.browser.version < 9)) {
+                submit.fadeIn(300);
+            } else {
+                submit.css({display: 'block'});
+            }
+        }
+    });
+});
+
+$(function () {
+    $("#idsettings").click(function () {
+        if ($("#details").is(":hidden")) {
+            $("#details").slideDown("fast");
+        } else {
+            $("#details").hide();
+        }
+    });
+    $("#idsettings").mouseleave(function () {
+        $('#details').hide();
+    });
+});
+
+
+</script>
+
+<script>
+
+$("#hot2").click(function () {
+    if ($("#lenta-hots").is(":hidden")) {
+        $("#lenta-hots").slideDown("fast");
+    } else {
+        $("#lenta-hots").hide();
+    }
+});
+$("#hot2").mouseleave(function () {
+    $('#lenta-hots').hide();
+});
+
+</script>
+
+<!--lenta-end-->
+
+<!--[if IE 6]>
+<link rel="stylesheet" href="http://i.dir.bg/esspresso/css/IE6-fix.css" type="text/css" media="projection, screen">
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="http://i.dir.bg/esspresso/css/IE7-fix.css" type="text/css" media="projection, screen">
+<![endif]-->
+<!--[if lt IE 10]> 
+<style type="text/css">.ispace { margin-bottom:0px !important; padding-bottom:15px; }</style>
+<![endif]-->
+
+<div id="1_dnes_footer" name="1_dnes_footer" class=adsplace> </div>
+
+
+
+
+
+
+
+
+
+
+<div id="newsbranding-fix" align="center" style="line-height:0; font-size:1px">
+<script language="javascript" src="http://r5.dir.bg/js.php?Code=1_dnes_pole" charset="utf-8">
+</script></div>
+
+<div id="1_dnes_note" class="ie6-invisible" style="position:fixed; z-index:999; top:115px; left:50%; margin-left:-660px; width:180px; height:180px;"><script language="javascript" src="http://r5.dir.bg/js.php?Code=1_dnes_note" charset="utf-8">
+</script> </div>
+
+<div id="wrap">
+
+<div id="header">
+  <div id="searcha">
+         <form id="form1" name="form1" method="get" action="/search_result.php">
+          <input type="image" src="http://i.dir.bg/p.gif"  id="search-button" value="Submit" alt="Submit">
+          <input name="textfield" type="text" id="search-input"  value="Tърси в днес" onfocus="this.value='';" />
+        </form>
+    </div>
+    <div id="logo2"> <a href="/" style="display:block; width:260px; height:50px;">&nbsp;</a></div>
+        <div id="chasa"> 2 Май 2016 | 14:33 ч. </div>
+    <div id="top-right-buttons">
+      <ul >
+      <li class="photo "><a href="/gallery_fp.php">Снимки</a></li>
+      <li class="video "><a href="/video.php?id=22456953&amp;lv=1">Видео</a></li>  
+      <li class="rss"><a href="http://dnes.dir.bg/support/cat_rss.php?section=all">RSS</a></li>
+      <li class="mobile"><a href="http://www.dir.bg/smart/dnes.html">Mobile</a></li>
+  </ul></div>
+  </div>
+
+
+  <!--Header start-->
+<!--Header end-->
+
+
+
+
+<div class="clearfloat"></div>
+
+  <div id="topnav">
+
+    <ul>
+    
+      <li ><a href="/cat/all/">Последни новини</a></li>
+      <li ><a href="/cat/main/">Главните</a></li>
+      <li ><a href="/cat/politics/">Политика</a></li>
+      <li ><a href="/cat/society/">Общество</a></li>
+      <li ><a href="/cat/world/">По света</a></li>
+      <li ><a href="/cat/business/">Бизнес</a></li>
+      <li ><a href="http://dnes.dir.bg/cat.php?id=434">Спектър</a></li>
+      <li ><a href="http://dnes.dir.bg/cat.php?id=417">На фокус</a></li>
+      <!--<li><a href="http://dnes.dir.bg/izbori-2013/">Властта</a></li>-->
+      
+      <!--<li id="hot-menu"><a href="#" >Мнения</a>  
+                        <div id="menu-hots">
+                            <a href="http://dnes.dir.bg/izbori-2013/temite/tag_mnenie/izbori2013-122244">Предсрочни избори</a>
+                            <a href="http://dnes.dir.bg/temite/tag_mnenie/ukrina-45576">Украйна</a>
+                        <div class="clearfloat"></div>
+                        </div>
+
+          
+    
+    </li>
+    -->  
+    <li id='hot-menu'><a href='#'>ТЕМИТЕ</a><div id='menu-hots'><a href='http://dnes.dir.bg/tag_first.php?id=122244'>Кабинетът</a><a href='http://dnes.dir.bg/tag_first.php?id=132368'>Бежанците</a><a href='http://dnes.dir.bg/tag_first.php?id=119833'>Джихад</a><a href='http://dnes.dir.bg/tag_first.php?id=121340'>Природата</a><a href='http://dnes.dir.bg/tag_first.php?id=47170'>Евросъюзът</a><a href='http://dnes.dir.bg/tag_first.php?id=139004'>Избори в САЩ</a><a href='http://dnes.dir.bg/tag_first.php?id=139584'>Панама гейт</a><a href='http://dnes.dir.bg/tag_first.php?id=45576'>Украйна</a><a href='http://dnes.dir.bg/tag_first.php?id=46544'>Улични бойци</a><div class='clearfloat'></div></div></li>  
+      
+      
+      
+      
+        </ul>
+    <div class="clearfloat"></div>
+  </div>
+    <!--  top menu end-->
+      
+  <script>
+  
+$("#hot-menu").click(function () {
+    if ($("#menu-hots").is(":hidden")) {
+        $("#menu-hots").slideDown("fast");
+    } else {
+        $("#menu-hots").hide();
+    }
+});
+$("#hot-menu").mouseleave(function () {
+    $('#menu-hots').hide();
+});
+
+</script>
+
+<div id="content">
+<div id="rightClomn" class="right" style="width: 307px;">
+  
+    <script language="javascript" src="http://r5.dir.bg/js.php?Code=1_dnes_b1" charset="utf-8">
+</script>    
+  <img src="http://r5.dir.bg/news_stat.php?place=&type=1&force=1" width="1" height="1" border="0" align="left">
+  <div class="searchGallery">
+<input class="ac_input" autocomplete="off" value="Търси в снимки" name="tsearchp" id="tsearchp" type="text" onFocus="this.value='';">
+<div class="clearleft"></div>
+</div>
+<div class="searchGallContent">
+</div><div class="searchGallBottom"></div>  <ul class="tabs2">
+   
+  <li id="w3"><a href="javascript:void(0);" >Главните</a></li>
+    <li id="w1"><a href="javascript:void(0);" >Най-четени</a></li>
+  <li id="w2"><a href="javascript:void(0);" >Най-коментирани</a></li>
+</ul>
+  
+<div class="panes2" style="border-top:1px solid #A2B5CE; margin-top:-1px;">
+
+
+<!--div 1-->
+		<div class="items">
+		<!-- Last updated: 2016-05-02 14:00:59 -->
+								  	  <div class="item"> 
+			    <a href="/news/produkti-mente-22477065?nt=9" class="anonsi2"><img src="http://i3.dir-i.net/CMS/2015/06/15/u/7_uu4ol0.jpg" width="75" height="75" alt="news title" /> 
+          <span class="iehfix font-news" style="display:block; min-height:27px;">Бизнесът със стоки ”менте” е по-голям от този с наркотиците</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">вчера | </b>
+          <span class="comentBroi">(40)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>&nbsp;&nbsp;
+                    
+          </span>
+          </a>
+		      <br clear="all" />
+		      </div>
+											  	  <div class="item"> 
+			    <a href="/news/severna-koreja-svatbi-kongres-pogrebenia-22479585?nt=9" class="anonsi2"><img src="http://i1.dir-i.net/CMS/2016/05/02/d/7_dr3r63.jpg" width="75" height="75" alt="news title" /> 
+          <span class="iehfix font-news" style="display:block; min-height:27px;">Пхенян забрани сватби и погребения преди партийния конгрес</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">12:29 | </b>
+          <span class="comentBroi">(55)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>&nbsp;&nbsp;
+                    
+          </span>
+          </a>
+		      <br clear="all" />
+		      </div>
+											  	  <div class="item"> 
+			    <a href="/news/ukrina-22479706?nt=9" class="anonsi2"><img src="http://i3.dir-i.net/CMS/2015/10/08/z/7_zx6i7i.jpg" width="75" height="75" alt="news title" /> 
+          <span class="iehfix font-news" style="display:block; min-height:27px;">Шефът на НАТО: Не искаме военна конфронтация с Русия</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">12:47 | </b>
+          <span class="comentBroi">(109)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>&nbsp;&nbsp;
+                    
+          </span>
+          </a>
+		      <br clear="all" />
+		      </div>
+											  	  <div class="item"> 
+			    <a href="/news/protesti-izbori2013-izborniat-kodex-22479255?nt=9" class="anonsi2"><img src="http://i1.dir-i.net/CMS/2016/05/02/y/7_yj8rb5.jpg" width="75" height="75" alt="news title" /> 
+          <span class="iehfix font-news" style="display:block; min-height:27px;">Българите по света искат вето за Изборния кодекс (Снимки)</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">11:39 | </b>
+          <span class="comentBroi">(104)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(7)</span>&nbsp;&nbsp;
+                    
+          </span>
+          </a>
+		      <br clear="all" />
+		      </div>
+											  	  <div class="item"> 
+			    <a href="/news/plovdiv-burki-22479851?nt=9" class="anonsi2"><img src="http://i1.dir-i.net/CMS/2016/05/02/s/7_scd5y6.jpg" width="75" height="75" alt="news title" /> 
+          <span class="iehfix font-news" style="display:block; min-height:27px;">И ОС в Пловдив се готви да наложи забрана на бурките</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">13:13 | </b>
+          <span class="comentBroi">(17)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>&nbsp;&nbsp;
+                    
+          </span>
+          </a>
+		      <br clear="all" />
+		      </div>
+											  	  <div class="item"> 
+			    <a href="/news/iznos-gazprom-krajat-zhen-potok-22476967?nt=9" class="anonsi2"><img src="http://i3.dir-i.net/CMS/2014/04/29/b/7_bjlkgf.jpg" width="75" height="75" alt="news title" /> 
+          <span class="iehfix font-news" style="display:block; min-height:27px;">”Газпром” увеличава износа на газ за Европа</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">вчера | </b>
+          <span class="comentBroi">(420)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>&nbsp;&nbsp;
+                    
+          </span>
+          </a>
+		      <br clear="all" />
+		      </div>
+																																																																														            <div id="pr-in-top">    
+			<script language="javascript" src="http://r5.dir.bg/js.php?Code=1_dnes_pr&enc=u" charset="utf-8">
+      </script>
+      </div>
+		</div> 
+<!--div 1 end-->
+	
+
+
+<!--div 2-->
+		<div class="items">
+								  	  <div class="item"> 
+			    <a href="/news/rusia-ukrina-nato-22471777?nt=9" class="anonsi2"><img src="http://i3.dir-i.net/CMS/2016/01/20/s/7_swf3cn.jpg" width="75" height="75" alt="news title" /> 
+          <span class="iehfix font-news" style="display:block; min-height:27px;">НАТО с 4 батальона на руската граница</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">30.04 | </b>
+          <span class="comentBroi">(1348)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>&nbsp;&nbsp;
+          <span class="viewBroi">(15911)</span>
+          </span>
+          </a>
+		      <br clear="all" />
+		      </div>
+			 
+								  	  <div class="item"> 
+			    <a href="/news/samoleti-USA-rusia-ukrina-prehvashtane-22470450?nt=9" class="anonsi2"><img src="http://i2.dir-i.net/CMS/2016/04/30/k/7_kjmlkm.jpg" width="75" height="75" alt="news title" /> 
+          <span class="iehfix font-news" style="display:block; min-height:27px;">Су-27 прехванал US самолет заради изключено устройство</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">30.04 | </b>
+          <span class="comentBroi">(752)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>&nbsp;&nbsp;
+          <span class="viewBroi">(12836)</span>
+          </span>
+          </a>
+		      <br clear="all" />
+		      </div>
+			 
+								  	  <div class="item"> 
+			    <a href="/news.php?id=22472274&nt=9" class="anonsi2"><img src="http://i1.dir-i.net/CMS/2011/12/12/7_ndl1ma.jpg" width="75" height="75" alt="news title" /> 
+          <span class="iehfix font-news" style="display:block; min-height:27px;">Путин отново опря до Кудрин</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">30.04 | </b>
+          <span class="comentBroi">(356)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>&nbsp;&nbsp;
+          <span class="viewBroi">(12192)</span>
+          </span>
+          </a>
+		      <br clear="all" />
+		      </div>
+			 
+								  	  <div class="item"> 
+			    <a href="/news/Germania-evropeyski-parlament-alternativa-germania-politicheska-programa-22476489?nt=9" class="anonsi2"><img src="http://i3.dir-i.net/CMS/2016/05/01/3/7_34mzrz.jpg" width="75" height="75" alt="news title" /> 
+          <span class="iehfix font-news" style="display:block; min-height:27px;">”Алтернатива за Германия”: Ислямът е противоконституционен</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">вчера | </b>
+          <span class="comentBroi">(228)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>&nbsp;&nbsp;
+          <span class="viewBroi">(10332)</span>
+          </span>
+          </a>
+		      <br clear="all" />
+		      </div>
+			 
+								  	  <div class="item"> 
+			    <a href="/news/USA-barak-obama-prezidentski-izbori-sasht-izbori-2016-22476697?nt=9" class="anonsi2"><img src="http://i1.dir-i.net/CMS/2016/05/01/0/7_0o4go5.jpg" width="75" height="75" alt="news title" /> 
+          <span class="iehfix font-news" style="display:block; min-height:27px;">Обама ”изпържи” в шеговит тон Доналд Тръмп</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">вчера | </b>
+          <span class="comentBroi">(277)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>&nbsp;&nbsp;
+          <span class="viewBroi">(10028)</span>
+          </span>
+          </a>
+		      <br clear="all" />
+		      </div>
+			 
+								  	  <div class="item"> 
+			    <a href="/news/targovia-es-evropeyski-parlament-novi-mitnicheski-pravila-22476189?nt=9" class="anonsi2"><img src="http://i3.dir-i.net/CMS/2012/05/23/7_vqspzl.jpg" width="75" height="75" alt="news title" /> 
+          <span class="iehfix font-news" style="display:block; min-height:27px;">ЕС въведе нов Митнически кодекс</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">вчера | </b>
+          <span class="comentBroi">(60)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>&nbsp;&nbsp;
+          <span class="viewBroi">(9529)</span>
+          </span>
+          </a>
+		      <br clear="all" />
+		      </div>
+			 
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+			</div>
+<!--div 2 end-->
+
+<!--div 3 -->
+		<div class="items">
+								  	  <div class="item"> 
+			    <a href="/news/rusia-ukrina-nato-22471777?nt=9" class="anonsi2"><img src="http://i3.dir-i.net/CMS/2016/01/20/s/7_swf3cn.jpg" width="75" height="75" alt="news title" />       
+          <span class="iehfix font-news" style="display:block; min-height:27px;">НАТО с 4 батальона на руската граница</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">30.04 | </b>
+          <span class="comentBroi">(1348)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>
+          </span>
+          </a>
+		      <br clear="all" />         
+		      </div>
+											  	  <div class="item"> 
+			    <a href="/news/samoleti-USA-rusia-ukrina-prehvashtane-22470450?nt=9" class="anonsi2"><img src="http://i2.dir-i.net/CMS/2016/04/30/k/7_kjmlkm.jpg" width="75" height="75" alt="news title" />       
+          <span class="iehfix font-news" style="display:block; min-height:27px;">Су-27 прехванал US самолет заради изключено устройство</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">30.04 | </b>
+          <span class="comentBroi">(752)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>
+          </span>
+          </a>
+		      <br clear="all" />         
+		      </div>
+											  	  <div class="item"> 
+			    <a href="/news/iznos-gazprom-krajat-zhen-potok-22476967?nt=9" class="anonsi2"><img src="http://i3.dir-i.net/CMS/2014/04/29/b/7_bjlkgf.jpg" width="75" height="75" alt="news title" />       
+          <span class="iehfix font-news" style="display:block; min-height:27px;">”Газпром” увеличава износа на газ за Европа</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">вчера | </b>
+          <span class="comentBroi">(420)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>
+          </span>
+          </a>
+		      <br clear="all" />         
+		      </div>
+											  	  <div class="item"> 
+			    <a href="/news/velikden-patriarh-Нeofit-22472416?nt=9" class="anonsi2"><img src="http://i2.dir-i.net/CMS/2016/05/01/e/7_e17lfx.jpg" width="75" height="75" alt="news title" />       
+          <span class="iehfix font-news" style="display:block; min-height:27px;">Христос Воскресе. Великден е!</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">вчера | </b>
+          <span class="comentBroi">(400)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(2)</span>
+          </span>
+          </a>
+		      <br clear="all" />         
+		      </div>
+											  	  <div class="item"> 
+			    <a href="/news.php?id=22472274&nt=9" class="anonsi2"><img src="http://i1.dir-i.net/CMS/2011/12/12/7_ndl1ma.jpg" width="75" height="75" alt="news title" />       
+          <span class="iehfix font-news" style="display:block; min-height:27px;">Путин отново опря до Кудрин</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">30.04 | </b>
+          <span class="comentBroi">(356)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>
+          </span>
+          </a>
+		      <br clear="all" />         
+		      </div>
+											  	  <div class="item"> 
+			    <a href="/news/USA-barak-obama-prezidentski-izbori-sasht-izbori-2016-22476697?nt=9" class="anonsi2"><img src="http://i1.dir-i.net/CMS/2016/05/01/0/7_0o4go5.jpg" width="75" height="75" alt="news title" />       
+          <span class="iehfix font-news" style="display:block; min-height:27px;">Обама ”изпържи” в шеговит тон Доналд Тръмп</span> 
+          <span style=" display:block; padding-top:4px;">
+          <b style="color:#3E5E8E; font-size:11px;">вчера | </b>
+          <span class="comentBroi">(277)</span>&nbsp;&nbsp;
+          <span class="photoBroi">(1)</span>
+          </span>
+          </a>
+		      <br clear="all" />         
+		      </div>
+																																																																														            <div id="pr-in-comment"></div>
+</div>
+<!--div 3 end-->
+
+<ul class="anonsi2">
+		<li class="seeAll"><a href="http://dnes.dir.bg/topics.php?section=all" style="height:24px;" > Всички новини &raquo; </a></li>
+</ul>
+
+
+</div>  
+  <script>
+    $(function() {
+	$("ul.tabs2").tabs("div.panes2 > div"); 
+    });
+  </script>
+  
+<script src="http://r.dir.bg/js.php?Code=1_dnes_b3">
+</script>
+
+<script src="http://r.dir.bg/js.php?Code=1_dnes_focus">
+</script>	
+</div>
+
+
+<div id="leftClomn" class="left" style="width:635px; padding-left:10px">
+
+<div class="clearfloat"></div>
+
+<script type="text/javascript" src="http://i.dir.bg/gallery_new/bootstrap/js/ilightbox.packed.js"></script>
+<link href="http://i.dir.bg/esspresso/css/bootstrap-btn.css" rel="stylesheet" type="text/css" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link rel='stylesheet' href='http://i.dir.bg/gallery_new/bootstrap/css/jquery.justifiedgallery.min.css' type='text/css' media='all' />
+<link href="http://i.dir.bg/gallery_new/bootstrap/css/dark-skin/skin.css" rel="stylesheet" type="text/css" />
+<link href="http://i.dir.bg/gallery_new/bootstrap/css/ilightbox.css" rel="stylesheet" type="text/css" />
+<script type='text/javascript' src='http://ni.dir.bg/gallery.dir.bg/jquery.justifiedgallery.js'></script>
+<script type='text/javascript' src='http://i.dir.bg/gallery_new/bootstrap/js/jquery.backgroundSize.js'></script>
+
+ <!--gallery-image-->
+<script>
+
+$(window).load(function(){
+
+	var closelb = $('#ilightbox').iLightBox({
+      skin: 'dark'
+    });
+	$(document).on('click', '.ilightbox-image', function() {
+	  closelb.close();
+	});
+	
+$('#stena').show();
+		
+		
+
+		//$('#big-image-container').mouseover(function(){
+			//$('.111').show("fast");
+		//});
+		
+		//$('#big-image-container').mouseleave(function(){
+			//$('.111').hide("fast");
+		//});
+		
+		//$('#single-image-container').show();
+	});
+
+	
+    </script>
+<h1 style="text-align:center;">Новините в снимки</h1>
+<div id="stena" style="margin:auto; padding-top:20px; width:605px;">
+<a href="gallery.php?id=22480165" title="" style="display:none;"><img src="http://i3.dir-i.net/CMS/2012/12/05/28_53k2go.jpg" width="75" height="75" alt="Мъж е намерен убит в апартамент в столичния квартал ”Дружба”<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22479851" title="" style="display:none;"><img src="http://i3.dir-i.net/CMS/2016/05/02/s/28_scd5y6.jpg" width="75" height="75" alt="И ОС в Пловдив се готви да наложи забрана на бурките<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22479706" title="" style="display:none;"><img src="http://i2.dir-i.net/CMS/2015/10/08/z/28_zx6i7i.jpg" width="75" height="75" alt="Шефът на НАТО: Не искаме военна конфронтация с Русия<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22479585" title="" style="display:none;"><img src="http://i1.dir-i.net/CMS/2016/05/02/d/28_dr3r63.jpg" width="75" height="75" alt="Пхенян забрани сватби и погребения преди партийния конгрес<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22479255" title="" style="display:none;"><img src="http://i2.dir-i.net/CMS/2016/05/02/y/28_yj8rb5.jpg" width="75" height="75" alt="Българите по света искат вето за Изборния кодекс (Снимки)<br />
+7 снимки"/></a>
+<a href="gallery.php?id=22478844" title="" style="display:none;"><img src="http://i3.dir-i.net/CMS/2009/08/01/28_bcf444.jpg" width="75" height="75" alt="200 000 коли пътуват към София след Великден<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22477065" title="" style="display:none;"><img src="http://i3.dir-i.net/CMS/2015/06/15/u/28_uu4ol0.jpg" width="75" height="75" alt="Бизнесът със стоки ”менте” е по-голям от този с наркотиците<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22476967" title="" style="display:none;"><img src="http://i3.dir-i.net/CMS/2014/04/29/b/28_bjlkgf.jpg" width="75" height="75" alt="”Газпром” увеличава износа на газ за Европа<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22476888" title="" style="display:none;"><img src="http://i1.dir-i.net/CMS/2015/07/03/a/28_aim193.jpg" width="75" height="75" alt="Ограбиха храма ”Св. Георги Победоносец“ край Банско<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22476697" title="" style="display:none;"><img src="http://i1.dir-i.net/CMS/2016/05/01/0/28_0o4go5.jpg" width="75" height="75" alt="Обама ”изпържи” в шеговит тон Доналд Тръмп<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22476489" title="" style="display:none;"><img src="http://i1.dir-i.net/CMS/2016/05/01/3/28_34mzrz.jpg" width="75" height="75" alt="”Алтернатива за Германия”: Ислямът е противоконституционен<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22476332" title="" style="display:none;"><img src="http://i1.dir-i.net/CMS/2016/05/01/y/28_ypugj0.png" width="75" height="75" alt="Патриотичен фонтан свети в цветовете на трибагреника<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22476189" title="" style="display:none;"><img src="http://i3.dir-i.net/CMS/2012/05/23/28_vqspzl.jpg" width="75" height="75" alt="ЕС въведе нов Митнически кодекс<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22475981" title="" style="display:none;"><img src="http://i1.dir-i.net/CMS/2016/03/15/x/28_xk7vmm.jpg" width="75" height="75" alt="9 души с отнети книжки след проверки в София<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22475911" title="" style="display:none;"><img src="http://i2.dir-i.net/CMS/2016/05/01/g/28_gbjevp.jpg" width="75" height="75" alt="Десетки жертви от кървав атентат на ИД с коли бомби в Ирак<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22475728" title="" style="display:none;"><img src="http://i3.dir-i.net/CMS/2015/02/03/28_pjuvrp.jpg" width="75" height="75" alt="Министър: Предстоящите проучвания за газ са безопасни<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22475452" title="" style="display:none;"><img src="http://i1.dir-i.net/CMS/2014/08/01/28_yezms1.jpg" width="75" height="75" alt="Наш алпинист покори шести осемхилядник<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22475244" title="" style="display:none;"><img src="http://i3.dir-i.net/CMS/2016/01/22/h/28_h8ks1n.jpg" width="75" height="75" alt="Берлин доволен от Турция за спирането на мигрантите<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22475005" title="" style="display:none;"><img src="http://i1.dir-i.net/CMS/2013/07/05/28_b1cumv.jpg" width="75" height="75" alt="Водата в София поскъпва с 6 ст. на кубик<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22474851" title="" style="display:none;"><img src="http://i2.dir-i.net/CMS/2016/05/01/w/28_we2ds6.jpg" width="75" height="75" alt="В църквите се отслужи Второ Възкресение<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22474637" title="" style="display:none;"><img src="http://i2.dir-i.net/CMS/2012/08/13/28_nm58jj.jpg" width="75" height="75" alt="Какво ще бъде времето през май?<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22474405" title="" style="display:none;"><img src="http://i2.dir-i.net/CMS/2016/04/23/p/28_py8w5b.jpg" width="75" height="75" alt="С шеги и закачки Обама лансира Клинтън за президент<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22474230" title="" style="display:none;"><img src="http://i3.dir-i.net/CMS/2016/05/01/8/28_8hy6ub.jpg" width="75" height="75" alt="България и светът отбелязват Деня на труда<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22473912" title="" style="display:none;"><img src="http://i1.dir-i.net/CMS/2013/05/02/28_9h5chv.jpg" width="75" height="75" alt="Честваме 140 г. от Априлското въстание<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22472416" title="" style="display:none;"><img src="http://i2.dir-i.net/CMS/2016/05/01/e/28_e17lfx.jpg" width="75" height="75" alt="Христос Воскресе. Великден е!<br />
+2 снимки"/></a>
+<a href="gallery.php?id=22472274" title="" style="display:none;"><img src="http://i1.dir-i.net/CMS/2011/12/12/28_ndl1ma.jpg" width="75" height="75" alt="Путин отново опря до Кудрин<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22472098" title="" style="display:none;"><img src="http://i1.dir-i.net/CMS/2015/02/26/28_v2i1r8.jpg" width="75" height="75" alt="Тийнейджърки върнаха загубен портфейл с 1400 лв.<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22470886" title="" style="display:none;"><img src="http://i2.dir-i.net/CMS/2016/04/30/s/28_swghsg.jpg" width="75" height="75" alt="Благодатният огън вече е в София<br />
+2 снимки"/></a>
+<a href="gallery.php?id=22471777" title="" style="display:none;"><img src="http://i3.dir-i.net/CMS/2016/01/20/s/28_swf3cn.jpg" width="75" height="75" alt="НАТО с 4 батальона на руската граница<br />
+1 снимки"/></a>
+<a href="gallery.php?id=22471429" title="" style="display:none;"><img src="http://i1.dir-i.net/CMS/2016/04/13/l/28_lrup7t.jpg" width="75" height="75" alt="МВР: 20 000 души без книжки по пътищата<br />
+1 снимки"/></a>
+ </div>
+ <div id="paging" class="paging_gallery_news" style="margin-top:25px; padding-left:180px;">
+<ul>
+<li class="active"><a href="javascript:void(0);">1</a></li><li><a href="?page=1">2</a></li><li><a href="?page=2">3</a></li><li><a href="?page=3">4</a></li><li><a href="?page=4">5</a></li><li><a href="?page=1">&#0187;</a></li></ul>
+<div class="clearleft"></div>
+</div>
+<script type="text/javascript">
+
+$(window).load(function(){
+	$("#stena").justifiedGallery({
+		'sizeSuffixes' : {
+            'lt100':'',
+            'lt240':'',
+            'lt320':'',
+            'lt500':'',
+            'lt640':'',
+            'lt1024':''
+  },
+		'usedSuffix':'lt240', 
+		'justifyLastRow':true, 
+		'rowHeight':180, 
+		'fixedHeight':false, 
+		'lightbox':false, 
+		'captions':true, 
+		'margins':1
+	});
+}); 
+
+
+</script>
+
+<div class="clearleft"></div>
+ 
+<h1 class="gallery-txt">&nbsp;</h1>
+<p>&nbsp;</p>
+   
+<!--facebook-->
+<!--<div style="width:350px; margin:15px 0;">
+<div class="fb-like" data-href="http://life.dir.bg/gallery_fp.php" data-send="true" data-layout="button_count" data-width="250" data-show-faces="false" data-font="arial" style="float:right;"></div>
+</div>-->
+<!--facebook-end-->
+<div class="clearleft"></div>
+<!--<div style="width:350px; margin:15px 0;">
+    <div class="left" style="margin-right:7px;">Стани фен във <a href="http://facebook.com/pages/lifedirbg/126970354021186" target="_blank">Facebook</a></div></div> -->
+    
+	
+
+
+
+<!--leftClomn-end-->
+</div>
+
+
+
+
+
+
+<div class="clearfloat"></div>
+</div>
+</div>
+  	<script type="text/javascript">
+	
+		$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+		
+	</script>
+<div id="footer">
+    <div class="footerLinks">
+      <div id="goTop"><a href="#"><b>НАГОРЕ</b></a></div>
+      <p><a href="http://banners.dir.bg/">За реклама</a> | <a href="http://dnes.dir.bg/news_comments.php?id=18704599">Обратна връзка</a> | <a href="http://www.dir.bg/contacts.php" target="_blank">Контакти</a> | <a href="http://pay.dir.bg/user_agreement.php">Потребителско споразумение</a> | <a href="/contacts.php">Редакция</a> | <a href="/rules.php" style="color:#F60;">Правила за коментари</a>  | <a href="http://dir.bg/fm" target="_blank" style="display:inline-block; background-image:url(http://i.dir.bg/designs/dir/fm-footer-icons.png); background-repeat:no-repeat; padding-left:95px; height:24px; line-height:24px">Flight Mode</a></p></div>
+    <div id="copyright">
+          <ul id="footsocial">
+    <li class="footrss"><a href="http://dnes.dir.bg/support/cat_rss.php?section=all" title="Абонирай се за RSS новини">Rss</a></li>
+    <li class="footface"><a href="http://www.facebook.com/pages/Dnesdirbg/153438071384209" title="Последвай ни във Фейсбук">Facebook</a></li>
+    <li class="foottweet"><a href="http://twitter.com/dirbg" title="Последвай ни в Туитър">Tweeter</a></li>
+    <li class="footphone"><a href="http://dir.bg/smart" title="Мобилна версия">Мобилна версия</a></li>
+    <li><g:plusone count="false" href="http://dnes.dir.bg/"></g:plusone></li>
+    </ul>
+    <div class="right" style="padding-right:8px;">Винаги близо до теб:</div>
+    
+    
+      Copyright &copy; 2016 Dir.bg. All rights reserved. </div>
+</div>
+
+<div id="1_dnes_x" name="1_dnes_x" class=adsplace> </div><div id="1_dnes_bottom" name="1_dnes_bottom" class=adsplace> </div><div id=intermediateads style=visibility:hidden;display:none;> </div>
+<script type="text/javascript" src="http://i.dir.bg/dir_fp/places11.js">
+</script>   
+  
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/bg_BG/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> 
+
+
+
+
+<!-- (C)2000-2014 Gemius SA - gemiusAudience / dir.bg / DNES -->
+<script type="text/javascript">
+
+<!--//--><![CDATA[//><!--
+var pp_gemius_identifier = 'bD6apt.k42uWdlcUwq5ZYPU3LaCF5htUNnYZCjWbgOX.O7';
+// lines below shouldn't be edited
+function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+(function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+gt.setAttribute('defer','defer'); gt.src=l+'://gabg.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+//--><!]]>
+
+</script>
+
+
+<script language="JavaScript" type="text/javascript">
+document.write('<sc'+'ript type="text/javascript" src="http://r5.dir.bg/utb.php?rnd=' + Math.round(Math.random() * 100000) + '"></sc'+'ript>');
+</script>
+
+
+</body>
+</html>

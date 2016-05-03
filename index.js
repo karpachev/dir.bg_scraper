@@ -6,13 +6,16 @@ var URL = require('url');
 var md5 = require('md5');
 
 var datastore = require('./datastore.js');
+var categorize = require('./categorize.js');
 var stats = require("./stats.js");
 
 var starting_URL = 'http://dnes.dir.bg';
 /// Configuration object for the Crawling task
 function TaskConfig(config) {
-	this.request = request;
 	this.request = require("./datastore_request.js");
+	this.request = request;
+
+	this.DO_NOT_STORE_IN_DATASTORE = true;
 
 	if (config)
 		for (key in config) {
@@ -27,7 +30,7 @@ var crawler_queue = async.queue(
 	);
 crawler_queue.push(new TaskConfig({
 	URL:starting_URL,
-	max_level: 1
+	max_level: 2
 }));
 crawler_queue.drain = stats.print_stats.bind(stats);
 
@@ -74,7 +77,9 @@ function process_page(task, body) {
 		hashes[body_hash] = [ref_URL];
 	}
 
-	datastore.push({body:body, ref_URL:ref_URL, body_hash: body_hash});
+	if (!task.DO_NOT_STORE_IN_DATASTORE) 
+		datastore.push({body:body, ref_URL:ref_URL, body_hash: body_hash});
+	categorize.push({body:body, ref_URL:ref_URL, body_hash: body_hash});
 
 	var $ = cheerio.load(body);
 	$("a").each( function(index,element) {
